@@ -1,31 +1,30 @@
 // start carrousel
-   $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: false
-   });
+$(".carousel.carousel-slider").carousel({
+  fullWidth: true,
+  indicators: false
+});
 
+// move next carousel
+$(".moveNextCarousel").click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(".carousel").carousel("next");
+});
 
-   // move next carousel
-   $('.moveNextCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('next');
-   });
+// move prev carousel
+$(".movePrevCarousel").click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(".carousel").carousel("prev");
+});
 
-   // move prev carousel
-   $('.movePrevCarousel').click(function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('prev');
-   });
-
-   //Preloader
-   jQuery(window).on(‘load’, function() {
-    //Preloader
-    let preloaderFadeOutTime = 300;
-    function hidePreloader() {
-    var preloader = jQuery('.spinner-wrapper');
+//Preloader
+$(document).ready(function() {
+  //Preloader
+  let preloaderFadeOutTime = 3000;
+  function hidePreloader() {
+    var preloader = jQuery(".spinner-wrapper");
     preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-    });
+  }
+  hidePreloader();
+});

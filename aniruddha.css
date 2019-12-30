@@ -1,0 +1,15 @@
+nav .nav-wrapper ul {
+    text-align: center !important;
+  }
+  nav .nav-wrapper ul li {
+    display: inline !important;
+    float: none !important;
+  }
+  nav .nav-wrapper ul li a {
+    display: inline-block !important;
+  }
+  
+  .section-div{
+      min-height: 100vh;
+      width: 100%;
+  }
