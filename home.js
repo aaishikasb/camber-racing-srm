@@ -1,30 +1,31 @@
 // start carrousel
 $(".carousel.carousel-slider").carousel({
-  fullWidth: true,
-  indicators: false
-});
-
-// move next carousel
-$(".moveNextCarousel").click(function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  $(".carousel").carousel("next");
-});
-
-// move prev carousel
-$(".movePrevCarousel").click(function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-  $(".carousel").carousel("prev");
-});
-
-//Preloader
-$(document).ready(function() {
+    fullWidth: true,
+    indicators: false
+  });
+  
+  // move next carousel
+  $(".moveNextCarousel").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".carousel").carousel("next");
+  });
+  
+  // move prev carousel
+  $(".movePrevCarousel").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".carousel").carousel("prev");
+  });
+  
   //Preloader
-  let preloaderFadeOutTime = 3000;
-  function hidePreloader() {
-    var preloader = jQuery(".spinner-wrapper");
-    preloader.fadeOut(preloaderFadeOutTime);
-  }
-  hidePreloader();
-});
+  $(document).ready(function() {
+    //Preloader
+    let preloaderFadeOutTime = 4000;
+    function hidePreloader() {
+      var preloader = jQuery(".spinner-wrapper");
+      preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+  });
+  

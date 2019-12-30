@@ -10,12 +10,14 @@ nav .nav-wrapper ul li a {
 }
 
 nav .nav-wrapper {
-    background-color: #BF0000 !important;
     font-size: 14px;
     font-weight: bold;
     color: antiquewhite;
 }
 
+.nav-colo {
+    background-color: #BF0000 !important;
+}
 .spinner-wrapper {
     position: fixed;
     top: 0;
