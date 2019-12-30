@@ -79,7 +79,7 @@ nav .nav-wrapper {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -moz-font-feature-settings: 'liga';
+    /* -moz-font-feature-settings: 'liga'; */
     -moz-osx-font-smoothing: grayscale;
   }
   
